@@ -3,10 +3,7 @@
 
 <head>
   <title>Maintenance</title>
-
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  
   <meta name="theme-color" content="#ffffff">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -17,8 +14,6 @@
 </head>
 
 <body>
-    <button id="marktest">Test</button>
-
   <div id="container" class="container" style="margin-top: 20px;">
     <div class="row">
       <div id="signin" class="col s6">
@@ -38,9 +33,9 @@
               <label for="password">Password</label>
             </div>
           </div>
-          <!--<button class="btn-floating btn-medium pulse blue" type="submit" name="action" value="Log In" id="login"><i
+          <button class="btn-floating btn-medium pulse blue" id="login"><i
               class="material-icons right">send</i>
-          </button>-->
+          </button>
           <br>
           <br>
         </form>
@@ -93,6 +88,10 @@
     </div>
   </div>
  
+
+
+  <script src="assets/js/postNewUser.js"></script>
+  <script src="assets/js/userSignIn.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>

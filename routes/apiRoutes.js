@@ -4,13 +4,13 @@ var db = require("../models");
 
 module.exports = function (app) {
 
- /*
+ 
   app.post("/api/register", function (req, res) {
     db.User.create(req.body).then(function (dbUser) {
       res.json(dbUser);
     });
   });
-*/
+
 
 
   /*
@@ -19,16 +19,18 @@ module.exports = function (app) {
         res.json(Exercise)
       })
     })
+  */
   
-  
+
+ app.get("/api/users", function(req, res) {
+  db.User.findAll({}).then(function(dbUser) {
+    res.json(dbUser);
+  });
+});
   
     
-    app.get("/api/profile", function(req,res) {
-      db.User.findAll({}).then(function(Exercise) {
-        res.json(Exercise)
-      })
-    })
-    */
+    
+    
 
 
 

@@ -4,22 +4,21 @@ $(document).ready(function () {
     var lastName = $("#newLastName");
     var newUserName = $("#newEmail");
     var newPassword = $("#newPassword");
+    
+    // User Sign Up test function 
+    /*
     $(document).on("click", "#testSign", testSignUp);
-
     function testSignUp(event) {
         event.preventDefault();
-        upsertTest({
-            firstName: firstName.val().trim(),
-            lastName: lastName.val().trim(),
-            username: newUserName.val().trim(),
-            password: newPassword.val().trim()
-        })
-        console.log(upsertTest)
-    }
+        console.log(firstName.val().trim());
+        console.log(lastName.val().trim());
+        console.log(newUserName.val().trim());
+        console.log(newPassword.val().trim());
+    }*/
 
 
-/*
-    $(document).on("click", "#signUp", handleUserSignUp);
+
+    $(document).on("click", "#testSign", handleUserSignUp);
     var url = window.location.search;
     console.log(url);
     function handleUserSignUp(event) {
@@ -40,5 +39,5 @@ $(document).ready(function () {
     function upsertUser(userData) {
         $.post("/api/register", userData);
     }
-    */
+
 });
