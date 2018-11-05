@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "malFont";
+  src: url("agrevuecyr.ttf");
+}
+
+.navbar-brand {
+  font-family: "malFont";
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow: 1px 1px #000;
+}
+
+nav {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  text-shadow: 1px 1px #000;
+}
+
+.nav-blue {
+  color: #337ab7;
+}
+
+nav ul a.btn {
+  margin-top: -16px;
+  background-color: transparent !important;
+  border: .5px solid #FFF;
+  border-radius: 5px;
+  text-shadow: 1px 1px #000;
+}
+
+.nav-search {
+	line-height: 1 !important;
+}
+
+.nav i {
+  height: auto !important;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.modal-title {
+  font-size: 25px;
+}
+
+.ReactModal__Content {
+  border-radius: 5px !important;
+}

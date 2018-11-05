@@ -1,0 +1,33 @@
+.movie-menu {
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.movie-menu a{
+    text-decoration: none;
+}
+
+.menu-items {
+    padding: 0 20px;
+}
+
+.menu-items:hover {
+    text-decoration: none;
+}
+
+.movie-nav-active{
+	background: #337ab7;
+	color: #eee;
+}
+
+.list-user {
+	font-size: 12px;
+	margin-bottom: -10px;
+	margin-right: 0px;
+}
+
+.list-user span {
+	font-weight: bold;
+}

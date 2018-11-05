@@ -1,0 +1,77 @@
+video {
+    position: absolute;
+    z-index: -1;
+    background-size: 100% 100%;
+    top: -70px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+#video-title {
+    color: #FFF;
+    display: inline-block;
+    padding-left: 5px;
+    text-shadow: 1px 1px #000;
+}
+
+#spin {
+  color:#FFF;
+  display: inline-block;
+  font-size: 2.28rem;
+  text-shadow: 1px 1px #000;
+  color: #337ab7;
+}
+#spin:after {
+  content:"";
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% { content: "Discover" }
+  30% { content: "Experience" }
+  60% { content: "Track" }
+  100% { content: "Share" }
+}
+body {
+    background-color: #222;
+}
+.link-effect {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link-effect::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #337ab7;
+  transition: width 0.3s;
+}
+
+.link-effect:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .title-spinner {
+        display: none;
+    }
+}
+
+.title-spinner {
+    text-align: center;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+}

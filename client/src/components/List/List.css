@@ -1,0 +1,93 @@
+.container-fluid {
+    margin-top: 50px;
+}
+
+.list-overflow-container {
+    overflow-x: hidden;
+    color: #DDD;
+    border-radius: 5px;
+}
+
+.list-overflow-container ul {
+    margin: 0;
+}
+
+.list-overflow-container li {
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+}
+
+.list-overflow-container li * {
+    cursor: pointer;
+}
+
+.list-overflow-container li a {
+    color: #2A878C;
+}
+
+.list-overflow-container li:first-child {
+    border-top: none;
+}
+
+.list-overflow-container li:last-child {
+    border-bottom: none;
+}
+
+.list-group-item {
+    display: table-row;
+    background-color: transparent;
+    border: none;
+    color: #222;
+}
+
+.table-head {
+    background-color: #263238;
+}
+
+select {
+    display: inline-block;
+    color: #222;
+}
+
+.list-item-img {
+    width: 30%;
+}
+
+.list-group-item:nth-child(odd) {
+    background: #EEE;
+}
+
+.list-group-item:nth-child(even) {
+    background: #FFF;
+}
+
+td {
+    border-radius: 0 !important;
+}
+
+th a {
+	color: #eee;
+	cursor: pointer;
+}
+
+ th a:hover {
+	color: #eee;
+	cursor: pointer;
+}
+
+.item-status {
+	width: 8px;
+}
+
+ .item-status-completed {
+	background: #26448f;
+}
+
+ .item-status-dropped {
+	background: #a12f31;
+}
+
+ .item-status-ptw {
+	background: #c3c3c3;
+}

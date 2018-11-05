@@ -1,33 +1,38 @@
-# Bluewave Fitness
+# My Movie List
 
 ### Description
-A fitness website that stores your workouts, uses a login, calculates your BMI - all in one place.
+What exactly is My Movie List? Is it a copy of My Anime List? No, definitely not. Is the landing page similiar to Anilist? No, never heard of them. Anyway, My Movie List is a group project created with 4 other members that lets you store movies that you watched, plan to watch, or completed into MongoDB. Keep track of all the movies that you have watched in your lifetime, along with a score.
 
 - - -
 ### Demo
 
-(Image will be broken for now)
 ![Image 1](/images/image01.gif)
 
 - - -
 
-### Skills Used
-1. JavaScript / jQuery
-2. HTML
-3. CSS / Materialize.css
-4. MySQL
-5. Node.js / NPM
-6. Express
-7. ORM
-8. Font Awesome
-9. CLI
-10. SVG
+### Installation
 
-- - - 
-### Heroku Live Link
-URL
+- Run "yarn install" on root directory
+- CD to "CLIENT"
+- Run "yarn install"
+- CD back to root
+- Run "yarn start"
 
 - - -
 
-### Additional Information
-1. 
+### Skills Used
+1. React
+2. HTML
+3. CSS / BootStrap / Materialize
+4. JavaScript / jQuery
+5. MongoDB
+6. Node.js / NPM
+7. Express
+8. Heroku
+9. API
+10. CLI
+11. Font Awesome
+
+- - - 
+### Heroku Live Link
+https://mmlist.herokuapp.com/
