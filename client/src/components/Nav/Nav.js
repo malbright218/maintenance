@@ -132,15 +132,14 @@ export default class Nav extends React.Component {
 		//this._login(this.state.usernameInput, this.state.passwordInput)
 		let a = this.state.usernameInput;
 		let b = this.state.passwordInput;
-
-		axios.get('/auth/user').then(response => {
+		axios.get('/auth/users').then(response => {
 			let c = JSON.stringify(response.data)
 			let d = c.split('"');
-			let passwordIndex = d.indexOf(a) + 8
+			let passwordIndex = d.indexOf(a) + 4
 			let pwd = d[passwordIndex];
 
 			if ((jQuery.inArray(a, d) !== -1) && pwd === b) {
-				//console.log("YES")
+				console.log("YES")
 				sessionStorage.setItem("username", JSON.stringify(a))
 				sessionStorage.setItem("logout", "")
 				sessionStorage.setItem("signin", "hidden")
@@ -153,7 +152,7 @@ export default class Nav extends React.Component {
 					// hideSignup: "hidden"
 					logIn: true
 				})
-				window.location.replace(`http://localhost:3000/movielist/${sessionStorage.getItem("username").slice(1, -1)}`)
+				window.location.replace(`http://localhost:3000/profile`)
 			}
 		})
 	}

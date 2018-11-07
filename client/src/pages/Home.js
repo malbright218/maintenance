@@ -1,10 +1,10 @@
 import React from "react";
 import "../components/Home/Home.css";
-import LandingContent from "../components/LandingContent";
+
 
 const Home = () => (
   <div>
-    <LandingContent />
+    <h1>Hello</h1>
   </div>
 );
 
